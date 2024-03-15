@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="">
-      <div className=" bg-background1 flex flex-col items-center align-bottom  pt-16 ">
+      <div className="bg-cover bg-background1 bg-no-repeat flex flex-col items-center align-bottom  pt-16 ">
         {/* Header */}
         <div className="pb-11 self-center ">
           <Image width={220} height={240} src="/assets/MULTIMEDIOS.png" />
@@ -25,10 +25,11 @@ export default function Home() {
 
         {/* Media */}
         <div className="pb-16">
-          <h1 className="text-white text-3xl">
-            {" "}
-            Aqui va el video pero no ahorita no estoy seguro de como hacerlo xd{" "}
-          </h1>
+          <video
+            src="/assets/videodesktop.mp4"
+            controls="controls"
+            autoplay="true"
+          />
         </div>
 
         <div>
@@ -37,19 +38,20 @@ export default function Home() {
       </div>
 
       {/* Requirements */}
-      <div className="flex bg-cover bg-background2 align-middle pt-80">
-        <div className="ml-28 pb-28">
-          <Image src="/assets/requisitos.png" width={600} height={600} />
+      <div className="flex align-middle relative">
+        <img src="/assets/bg2.jpg" width='100%' />
+        <div className="absolute  self-center pl-16">
+          <img  src="/assets/requisitos.png" />
         </div>
       </div>
 
       {/* Menu */}
-      <div className="bg-background3 flex flex-col items-center justify-center">
+      <div className="bg-background3 bg-no-repeat bg-cover flex flex-col items-center justify-center">
         <div className="pt-24">
           <Image width={600} height={300} src="/assets/con-queso.png" />
         </div>
 
-        <div className="pt-16" >
+        <div className="pt-16 pb-16">
           <Image width={1200} height={600} src="/assets/lista-tacos.png" />
         </div>
       </div>
