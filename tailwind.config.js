@@ -8,9 +8,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "background1": "url('/assets/bg1.png')",
-        "background2": "url('/assets/bg2.jpg')",
-        "background3": "url('/assets/bg3.jpg')",
+        background1:
+          "url('https://cdnpublicidad.milenio.com/2024/PublicidadComercial/03.Marzo/TACO_FEST/bg1.png')",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
